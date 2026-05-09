@@ -32,9 +32,17 @@ export default function AccountPage() {
         <span className="text-charcoal">Account</span>
       </nav>
 
-      <h1 className="text-2xl font-light text-charcoal mb-2">
-        Hello, {user.firstName}
-      </h1>
+      <div className="flex items-baseline justify-between mb-2">
+        <h1 className="text-2xl font-light text-charcoal">
+          Hello, {user.firstName}
+        </h1>
+        <Link
+          href="/account/loyalty"
+          className="text-[11px] text-warm-gray underline hover:text-charcoal transition-colors"
+        >
+          HeroPoints
+        </Link>
+      </div>
       <p className="text-[13px] text-warm-gray mb-10">
         Welcome back to your FashionHero account.
       </p>
